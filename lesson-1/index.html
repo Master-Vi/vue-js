@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<!--MVVM 中的 view-->
+<div id="app">
+  {{message}}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  /*MVVM 中的 ViewModel 起一个 view 和 model 之间的桥梁作用，负责监视数据的变化*/
+  var vm = new Vue({
+    el: '#app',
+    /*MVVM 中的 model*/
+    data: {
+      message: "Hello Vue"
+    }
+  });
+</script>
+</body>
+</html>
